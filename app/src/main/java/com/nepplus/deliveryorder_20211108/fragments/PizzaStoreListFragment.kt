@@ -16,4 +16,11 @@ class PizzaStoreListFragment : Fragment() {
     ): View? {
         return inflater.inflate(R.layout.fragment_pizza_store_list, container, false)
     }
+
+    override fun onActivityCreated(savedInstanceState: Bundle?) {
+        super.onActivityCreated(savedInstanceState)
+
+//        동작 관련 코드 작성 예정
+
+    }
 }
