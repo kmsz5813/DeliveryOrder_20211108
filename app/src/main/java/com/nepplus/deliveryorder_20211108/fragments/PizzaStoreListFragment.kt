@@ -6,8 +6,13 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.nepplus.deliveryorder_20211108.R
+import com.nepplus.deliveryorder_20211108.datas.StoreData
 
 class PizzaStoreListFragment : Fragment() {
+
+    val mPizzaStoreList = ArrayList<StoreData>()
+
+
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -19,6 +24,10 @@ class PizzaStoreListFragment : Fragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
 
+        mPizzaStoreList.add( StoreData("피자헛")  )
+        mPizzaStoreList.add( StoreData("")  )
+        mPizzaStoreList.add( StoreData("")  )
+        mPizzaStoreList.add( StoreData("")  )
 
 
     }
